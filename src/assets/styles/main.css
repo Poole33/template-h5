@@ -1,0 +1,26 @@
+@import './theme.css';
+/* @import './business.scss'; */
+
+html, body {
+    height: 100%;
+    /* 防止页面上下弹动 */
+    overflow: hidden;
+    background: var(--theme-background);
+    font-size: 16px;
+}
+
+#app {
+    height: 100%;
+    color: var(--theme-color);
+    /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #686868;
+}

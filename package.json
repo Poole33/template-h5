@@ -1,0 +1,39 @@
+{
+  "name": "temeplate-h5",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@unocss/reset": "^0.60.0",
+    "animate.css": "^4.1.1",
+    "axios": "^1.6.8",
+    "echarts": "^5.5.1",
+    "js-base64": "^3.7.7",
+    "lodash": "^4.17.21",
+    "pinia": "^2.1.7",
+    "qs": "^6.12.1",
+    "tdesign-mobile-vue": "^1.15.0",
+    "vconsole": "^3.15.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@unocss/preset-rem-to-px": "0.62.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "postcss-mobile-forever": "^4.1.6",
+    "sass": "^1.76.0",
+    "sass-loader": "^14.2.1",
+    "unocss": "^0.59.4",
+    "vite": "^5.2.8"
+  }
+}
