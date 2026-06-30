@@ -26,7 +26,7 @@ export default defineConfig(env => {
     },
     server: {
       host: '0.0.0.0',
-      port: 6666,
+      port: 3366,
       proxy: {
         '/api': {
             // target: 'http://10.10.24.126:9075',

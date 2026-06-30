@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
+    "@iconify-vue/solar": "^1.0.4",
     "@unocss/reset": "^0.60.0",
     "animate.css": "^4.1.1",
     "axios": "^1.6.8",
