@@ -36,6 +36,8 @@ export default antfu({
     'ts/no-empty-object-type': 'off',
     // 允许扩展原生对象原型
     'no-extend-native': 'off',
+    // 允许使用 ==
+    'eqeqeq': 'on',
     // vue SFC 调换顺序改这里
     'vue/block-order': ['error', {
       order: [['script', 'template'], 'style'],
