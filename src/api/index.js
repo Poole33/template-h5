@@ -30,6 +30,14 @@ service.interceptors.response.use(res => {
         }
         return res.data
     }
+}, error => {
+    console.log(error)
+    const isTimeout = error.code === 'ECONNABORTED' && error.message.includes('timeout')
+
+    if (isTimeout) {
+      show_error_msg('请求超时，请检查网络后重试')
+      return error
+    }
 })
 
 export default {
