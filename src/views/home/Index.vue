@@ -1,6 +1,6 @@
 <template>
   <div>
-    <t-button>{{test}}按钮</t-button>
+    <t-button v-if="test == 1">{{ test }}按钮</t-button>
     <div class="text-lg">lg</div>
     <div class="text-sm">sm</div>
     <div class="text-[20px]">20px</div>

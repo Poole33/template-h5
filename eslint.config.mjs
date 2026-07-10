@@ -3,18 +3,20 @@ import antfu from '@antfu/eslint-config'
 export default antfu({
   // Vue 项目打开；非 Vue 可以删掉
   vue: true,
-
-  // React 项目才打开
-  // react: true,
-
   // 如果用了 UnoCSS 才打开
   // unocss: true,
-
+  ignores: [
+    '**/dist',
+    '**/.output',
+    '**/.nuxt',
+    '**/unpackage', // uni-app 的打包目录
+    'node_modules',
+    'dist',
+  ],
   formatters: {
     css: true,
     html: true,
   },
-
   rules: {
     // 允许无用的return语句
     'no-useless-return': 'off',
@@ -37,11 +39,13 @@ export default antfu({
     // 允许扩展原生对象原型
     'no-extend-native': 'off',
     // 允许使用 ==
-    'eqeqeq': 'on',
+    'eqeqeq': 'off',
+    'vue/eqeqeq': 'off',
     // vue SFC 调换顺序改这里
     'vue/block-order': ['error', {
       order: [['script', 'template'], 'style'],
     }],
     'style/max-statements-per-line': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
   },
 })
