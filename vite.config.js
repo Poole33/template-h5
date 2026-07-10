@@ -4,6 +4,7 @@ import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import viewport from 'postcss-mobile-forever'
 import autoprefixer from 'autoprefixer'
+import AutoImport from 'unplugin-auto-import/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig(env => {
@@ -13,6 +14,11 @@ export default defineConfig(env => {
       vue(),
       UnoCSS({
           configFile: './uno.config.js'
+      }),
+      AutoImport({
+        imports: ['vue', 'uni-app'],
+        dirs: ['src/hooks'], // 自动导入 hooks
+        vueTemplate: true, // default false
       }),
     ],
     esbuild:{

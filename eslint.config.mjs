@@ -42,5 +42,6 @@ export default antfu({
     'vue/block-order': ['error', {
       order: [['script', 'template'], 'style'],
     }],
+    'style/max-statements-per-line': 'off',
   },
 })
