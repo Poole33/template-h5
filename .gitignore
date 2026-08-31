@@ -18,8 +18,8 @@ coverage
 /cypress/screenshots/
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+# .vscode/*
+# !.vscode/extensions.json
 .VSCodeCounter/*
 .idea
 *.suo
@@ -29,3 +29,6 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+auto-imports.d.ts
+components.d.ts
