@@ -48,7 +48,7 @@ export default function usePagination(request, options = {}) {
 
     const req = { ...params, [pageKeys.page]: page }
 
-    if (refresh)
+    if (refresh && list.value.length)
       refreshing.value = true
     else
       loading.value = true
